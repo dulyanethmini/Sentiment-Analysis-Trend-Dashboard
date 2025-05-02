@@ -2,10 +2,12 @@
 The project is based on  analyze text input  or sentiment and displays trends over time.
 
 
-##Section 03 - Frontend (Dashboard UI)
+## Section 03 - Frontend (Dashboard UI)
+
 This frontend dashboard allows users to input text, analyze its sentiment using a backend API, and visualize sentiment trends dynamically using various charts. Built using plain HTML, CSS, and JavaScript, the UI is simple, clean, and responsive.
 
 📌 Features
+
 ✅ Responsive and intuitive web UI using HTML, CSS, and JavaScript
 ✅ Sentiment Analyzer Card:
 Text area input
