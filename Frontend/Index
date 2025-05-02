@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analyzer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Analyzer Card -->
+    <div class="card">
+        <h1>Sentiment Analyzer</h1>
+        <textarea id="textInput" placeholder="Enter your sentence here..."></textarea>
+        <br>
+        <button onclick="analyzeSentiment()">Analyze</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard">
+        <h2>Sentiment Analysis Dashboard</h2>
+        <div class="dashboard-grid">
+            <div class="chart-container"><canvas id="pieChart"></canvas></div>
+            <div class="chart-container"><canvas id="barChart"></canvas></div>
+            <div class="chart-container"><canvas id="radarChart"></canvas></div>
+            <div class="chart-container"><canvas id="doughnutChart"></canvas></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
