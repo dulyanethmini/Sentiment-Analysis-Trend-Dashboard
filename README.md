@@ -36,11 +36,14 @@ Doughnut Chart – Similar to pie, with aesthetic variation
 
 ✅ Maintains sentiment analysis history (no timestamp tracking required)
 
+✅ Dashboard styling optimized for clarity and usability
+
 
 ![WhatsApp Image 2025-05-03 at 19 28 00_510cfbce](https://github.com/user-attachments/assets/c2235135-52d1-4d4a-aff9-5b46a74d5f83)
 
 
 
-✅ Dashboard styling optimized for clarity and usability
+![WhatsApp Image 2025-05-03 at 19 27 37_34a6d700](https://github.com/user-attachments/assets/5e477b7b-bdb6-40a5-9e20-2af3ba165add)
+
 
 
