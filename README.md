@@ -28,7 +28,7 @@ This model processes user-inputted news text and outputs:
 ### Database
 
 The database layer of this project is built using SQLite, a file-based relational database that offers simplicity and portability. The database file is named news_sentiment.db, and it includes a single table called news_data. This table is created and populated in the load_and_analyze.py script, where pre-existing sentiment-labeled data is stored. If an old version of the database exists, it is first removed to ensure a clean state before storing new records using the to_sql() function from Pandas. This operation replaces the entire content of the news_data table with fresh sentiment analysis results. The structure typically includes fields like the news text, predicted label, confidence score, and optional metadata such as timestamp.
-To support visualization and interaction from the frontend, the get_all_news() function defined in database.py connects to this SQLite database, queries all records using SQL, and returns the result in a dictionary format. This allows seamless integration with API endpoints like /history for displaying meaningful historical sentiment data on the dashboard.
+To support visualization and interaction from the frontend, the get_all_news() function defined in database.py connects to this SQLite database, queries all records using SQL, and returns the result in a dictionary format. 
 
 
 ## Section 02 - API Layer
