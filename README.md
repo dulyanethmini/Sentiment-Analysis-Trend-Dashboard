@@ -11,7 +11,7 @@ Model & Database Layer – Trains a sentiment classification model and manages p
 API Layer – Provides endpoints for analyzing input text and retrieving sentiment history using FastAPI.
 Frontend Layer – A clean and responsive UI built with HTML, CSS, and JavaScript that visualizes results using Chart.js.
 
-##Section 02 - API Layer
+## Section 02 - API Layer
 
 In service in the backend of this project is build using FastAPI, which is what powers the sentiment analysis engine while processing user inputs inorder for it to predict sentiment and provide the serving results to the frontend dashboard in real-time. This basically is the connecting or the transport means to connect the analysis by taking in the inputs and then taking the results back to the frontend.
 
