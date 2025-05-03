@@ -11,6 +11,25 @@ Model & Database Layer – Trains a sentiment classification model and manages p
 API Layer – Provides endpoints for analyzing input text and retrieving sentiment history using FastAPI.
 Frontend Layer – A clean and responsive UI built with HTML, CSS, and JavaScript that visualizes results using Chart.js.
 
+##Section 02 - API Layer
+
+In service in the backend of this project is build using FastAPI, which is what powers the sentiment analysis engine while processing user inputs inorder for it to predict sentiment and provide the serving results to the frontend dashboard in real-time. This basically is the connecting or the transport means to connect the analysis by taking in the inputs and then taking the results back to the frontend.
+
+
+Modules used for section 02
+- FastAPI - used for the API routing and server
+- Pydantic - this was set in place in order to make sure that when a user enters their input that it is correct
+- sqlite3 - in order to connect with the array, which contains all the results that are saved
+- CORS Middleware- allows the frontend is connect with the backend
+
+
+Process description
+- The backend server was built using the FastAPI framework, as mentioned before
+- API routes were also created, which include POST/analyse, GET/history and GET/news
+- The streamed data is being saved in an array, which is then called through a JavaScript for analysis
+- The input data was then validated with Pydantic as mentioned in the modules used part
+
+
 
 ## Section 03 - Frontend Layer (Dashboard UI)
 
