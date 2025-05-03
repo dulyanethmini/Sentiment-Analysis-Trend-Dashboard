@@ -7,9 +7,29 @@ This project aims to develop sentiment analysis and a trend dashboard based on a
 
 The project divided under main three sections as following,
 
-Model & Database Layer – Trains a sentiment classification model and manages persistent storage of analyzed results.
-API Layer – Provides endpoints for analyzing input text and retrieving sentiment history using FastAPI.
-Frontend Layer – A clean and responsive UI built with HTML, CSS, and JavaScript that visualizes results using Chart.js.
+•	Model & Database Layer – Trains a sentiment classification model and manages persistent storage of analyzed results.
+•	API Layer – Provides endpoints for analyzing input text and retrieving sentiment history using FastAPI.
+•	Frontend Layer – A clean and responsive UI built with HTML, CSS, and JavaScript that visualizes results using Chart.js.
+
+
+## Section 01  - Model And Database Layer
+
+The Model & Database Layer is the core intelligence behind the application. It handles the sentiment classification logic and persistent storage of analyzed results, ensuring the system can both respond in real-time and support historical data visualizations.
+
+### Sentiment Analysis Model
+
+The application uses a fine-tuned transformer model (e.g., distilbert-base-uncased-finetuned-sst-2-english) from HuggingFace’s Transformers library.
+
+This model processes user-inputted news text and outputs:
+•	A sentiment label: POSITIVE, NEGATIVE, or NEUTRAL
+•	A confidence score: indicating how sure the model is about its prediction
+•	The model provides fast and accurate predictions, optimized for short-form text like news headlines or summaries.
+
+### Database
+
+The database layer of this project is built using SQLite, a file-based relational database that offers simplicity and portability. The database file is named news_sentiment.db, and it includes a single table called news_data. This table is created and populated in the load_and_analyze.py script, where pre-existing sentiment-labeled data is stored. If an old version of the database exists, it is first removed to ensure a clean state before storing new records using the to_sql() function from Pandas. This operation replaces the entire content of the news_data table with fresh sentiment analysis results. The structure typically includes fields like the news text, predicted label, confidence score, and optional metadata such as timestamp.
+To support visualization and interaction from the frontend, the get_all_news() function defined in database.py connects to this SQLite database, queries all records using SQL, and returns the result in a dictionary format. This allows seamless integration with API endpoints like /history for displaying meaningful historical sentiment data on the dashboard.
+
 
 ## Section 02 - API Layer
 
