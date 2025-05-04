@@ -39,7 +39,7 @@ In service in the backend of this project is build using FastAPI, which is what 
 Modules used for section 02
 - FastAPI - used for the API routing and server
 - Pydantic - this was set in place in order to make sure that when a user enters their input that it is correct
-- sqlite3 - in order to connect with the array, which contains all the results that are saved
+- sqlite - in order to connect with the array, which contains all the results that are saved
 - CORS Middleware- allows the frontend is connect with the backend
 
 
